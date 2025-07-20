@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ResumeBuilder Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">📄 ResumeBuilder <span>Pro</span></div>
+    <nav>
+      <button class="mode-btn" onclick="setMode('beginner')">Beginner Mode</button>
+      <button class="mode-btn" onclick="setMode('experienced')">Experienced Mode</button>
+      <button class="mode-btn" onclick="toggleStoryMode()">Story Mode</button>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <h1>Build Your Professional Resume with <span>Confidence</span></h1>
+    <p>A resume is your professional story condensed into one powerful document. Make yours count.</p>
+    <div class="stats">
+      <div><strong>78%</strong><br>prefer structured resumes</div>
+      <div><strong>6 sec</strong><br>avg review time</div>
+      <div><strong>95%</strong><br>require resume</div>
+    </div>
+    <div class="actions">
+      <button onclick="startBuilding()">Start Building Now</button>
+      <button class="outline">Learn Resume Basics</button>
+    </div>
+  </section>
+
+  <section id="storyMode" class="story hidden">
+    <h2>Tell Your Story - Step 1 of 4</h2>
+    <div class="form-section">
+      <div class="form-left">
+        <label for="aboutYou"><strong>Tell Me About Yourself</strong></label>
+        <textarea id="aboutYou" placeholder="Your story..."></textarea>
+        <ul class="tips">
+          <li>Speak naturally</li>
+          <li>Mention the role you're aiming for</li>
+          <li>Share your motivation</li>
+        </ul>
+      </div>
+      <div class="form-right">
+        <h3>Live Preview</h3>
+        <div id="preview">Your Name<br/><em>Your story will appear here...</em></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ResumeBuilder Pro. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
