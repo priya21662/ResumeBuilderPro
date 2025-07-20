@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ResumeBuilder Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">📄 ResumeBuilder <span>Pro</span></div>
+    <nav>
+      <button class="mode-btn" onclick="setMode('beginner')">Beginner Mode</button>
+      <button class="mode-btn" onclick="setMode('experienced')">Experienced Mode</button>
+      <button class="mode-btn story-btn" onclick="toggleStoryMode()">Story Mode</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Build Your Professional Resume with <span>Confidence</span></h1>
+    <p>A resume is your personal brand. Let’s make it professional, beautiful, and effective.</p>
+    <div class="stats">
+      <div><strong>78%</strong><span>Prefer structured resumes</span></div>
+      <div><strong>6 sec</strong><span>Average recruiter scan time</span></div>
+      <div><strong>95%</strong><span>Jobs require a resume</span></div>
+    </div>
+    <div class="hero-buttons">
+      <button onclick="startBuilding()">🚀 Start Building Now</button>
+      <button class="outline-btn">📘 Learn Resume Basics</button>
+    </div>
+  </section>
+
+  <section class="use-cases">
+    <h2>Where You'll Use Your Resume</h2>
+    <div class="use-list">
+      <div>📩 Job Applications</div>
+      <div>🎓 Internships</div>
+      <div>🏆 Hackathons</div>
+      <div>💰 Scholarships</div>
+    </div>
+  </section>
+
+  <section id="storyMode" class="story-mode hidden">
+    <h2>Tell Your Story - Step 1</h2>
+    <div class="story-container">
+      <div class="form-section">
+        <label for="aboutYou">👤 Tell Me About Yourself</label>
+        <textarea id="aboutYou" placeholder="Write about yourself here..."></textarea>
+        <ul class="tips">
+          <li>💬 Be natural and honest</li>
+          <li>🎯 Mention your career goal</li>
+          <li>💡 Share what motivates you</li>
+        </ul>
+      </div>
+      <div class="preview-section">
+        <h3>🧾 Live Preview</h3>
+        <div id="previewBox">Your story will appear here...</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>🚀 Built for Hackathons | &copy; 2025 ResumeBuilder Pro</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
