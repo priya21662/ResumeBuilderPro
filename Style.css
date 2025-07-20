@@ -1,0 +1,158 @@
+/* Fonts & Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9fafc;
+  color: #333;
+}
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.hidden {
+  display: none;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  color: white;
+}
+.logo span {
+  color: #a5f3fc;
+}
+.mode-btn {
+  margin-left: 1rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.mode-btn:hover {
+  background: #2563eb;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  background: white;
+}
+.hero h1 span {
+  color: #2563eb;
+}
+.stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+.stats div {
+  background: #eef2ff;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 120px;
+}
+.stats span {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+}
+.hero-buttons button {
+  margin: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.hero-buttons button:hover {
+  transform: scale(1.05);
+}
+.hero-buttons .outline-btn {
+  background: white;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+}
+.hero-buttons button:not(.outline-btn) {
+  background: #2563eb;
+  color: white;
+}
+
+/* Use Cases */
+.use-cases {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.use-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.use-list div {
+  background: #dbeafe;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+/* Story Mode */
+.story-mode {
+  background: #f1f5f9;
+  padding: 2rem 1rem;
+}
+.story-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.form-section, .preview-section {
+  flex: 1;
+  min-width: 280px;
+}
+textarea {
+  width: 100%;
+  height: 140px;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+.tips {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  list-style: none;
+  padding-left: 0;
+}
+.tips li::before {
+  content: '✔️ ';
+}
+#previewBox {
+  background: white;
+  padding: 1rem;
+  border: 2px dashed #94a3b8;
+  min-height: 140px;
+  border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background: #f3f4f6;
+  margin-top: 3rem;
+}
